@@ -14,7 +14,10 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\AzureRepositoryContract\AzureRepositoryContract.csproj" />
+    <ProjectReference Include="..\AzureRepository\AzureRepository.csproj" />
     <ProjectReference Include="..\AzureServiceContract\AzureServiceContract.csproj" />
+    <ProjectReference Include="..\AzureServiceImplementation\AzureServiceImplementation.csproj" />
   </ItemGroup>
 
 </Project>

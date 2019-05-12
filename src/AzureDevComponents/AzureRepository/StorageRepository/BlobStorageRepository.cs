@@ -2,7 +2,7 @@
 
 namespace AzureRepository.StorageRepository
 {
-    public class BlobStorageRepository : StorageAccountRepository, IBlobRepository
+    public class BlobStorageRepository : StorageAccountRepository, IBlobStorageRepository
     {
     }
 }

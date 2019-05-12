@@ -10,7 +10,7 @@ namespace AzureApis.Controllers
     [ApiController]
     public class BlobController : ControllerBase
     {
-        private IBlobService _blobService;
+        private readonly IBlobService _blobService;
 
         public BlobController(IBlobService blobService)
         {

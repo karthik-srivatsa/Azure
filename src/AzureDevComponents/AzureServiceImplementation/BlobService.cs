@@ -1,10 +1,17 @@
-﻿using AzureServiceContract;
+﻿using AzureRepositoryContract;
+using AzureServiceContract;
 using System.IO;
 
 namespace AzureServiceImplementation
 {
-    public class BlobServices : IBlobService
+    public class BlobService : IBlobService
     {
+        private readonly IBlobStorageRepository _blobRepository;
+
+        public BlobService(IBlobStorageRepository blobRepository)
+        {
+            _blobRepository = blobRepository;
+        }
         public void AppnedBlob(byte[] data)
         {
             throw new System.NotImplementedException();
